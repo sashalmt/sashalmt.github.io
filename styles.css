@@ -1,0 +1,124 @@
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  background-color: #FFF;
+  color: #520;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #DFA;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  color: #A50; /* Font color for the sidebar */
+  font-size: 1.1em; /* Larger font size */
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.nav ul, .contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav li, .contact-info li {
+  margin: 10px 0;
+}
+
+.nav a, .contact-info a {
+  text-decoration: none;
+  color: #A50; /* Font color for the sidebar links */
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav a:hover, .contact-info a:hover {
+  color: #520; /* Change color on hover */
+  transform: translateX(5px); /* Move to the right on hover */
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #FFF8E1; /* Lighter version of #DFA */
+}
+
+h1, h2 {
+  margin: 0 0 10px;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Increased min size */
+  gap: 20px;
+}
+
+.project-item {
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-item img {
+  width: 100%;
+  height: 200px; /* Increased height */
+  object-fit: cover;
+}
+
+.project-description {
+  padding: 10px;
+  text-align: center;
+}
+
+.project-description h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+}
+
+.project-description h3 a {
+  text-decoration: none; /* Remove underline from project title */
+  color: inherit; /* Inherit color from parent */
+  transition: color 0.3s ease;
+}
+
+.project-description h3 a:hover {
+  color: #520; /* Change color on hover */
+}
+
+.project-description p {
+  margin: 0;
+  color: #666;
+}
