@@ -1,10 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="refresh" content="0; url=projects.html">
-    <title>Redirecting...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sasha Lamot</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>If you are not redirected automatically, follow this <a href="projects.html">link to the Projects page</a>.</p>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="images/your-image.jpg" alt="Sasha Lamot" class="profile-img">
+                <h1>Sasha Lamot</h1>
+                <p>Hello, my name is Sasha Lamot currently a Senior at UC Berkeley studying Computer Science. I have been heavily invested in learning more about computer science in general with a keen interest in algorithm theory and optimiation. 
+                  Outside of class I have been part of a research lab developing software for nanotechnology experiments which includes a simulation for e-beam lithography. I have also done internships where I was more focused on software engineering such as 
+                  creating datapiplines and large data anaylsis at IMEC, and optimising and migration database systems at Apptweak.</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="about.html">🗣️ About Me</a></li>
+                    <li><a href="index.html">💻 Projects</a></li>
+                    <li><a href="photography.html">📷 Photography</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/sasha-lamot-b423081b1/" target="_blank">LinkedIn</a></li>
+                  <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                  <li><a href="mailto:sashalamot@berkeley.edu">Email Me</a></li>
+                  <li><a href="https://github.com/sashalmt" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="content">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <img src="images/project1-image.jpg" alt="Project 1">
+                    <div class="project-description">
+                        <h3><a href="https://github.com/your-github-username/project1" target="_blank">Machine Learning & Reinforcement Learning</a></h3>
+                        <p>Designed and built NN with Pytorch for; number recognition, language translation, function approx. and game simulation
+                          </p>
+                    </div>
+                </div>
+                <!-- Repeat similar blocks for other projects -->
+                <div class="project-item">
+                    <img src="images/project2-image.jpg" alt="Project 2">
+                    <div class="project-description">
+                        <h3><a href="https://github.com/your-github-username/project2" target="_blank">Gitlet</a></h3>
+                        <p>Built terminal version control system similar to github with features such as add, commit, log, merge, status, branch, in Java</p>
+                    </div>
+                </div>
+                <!-- Add more projects as needed -->
+                <div class="project-item">
+                    <img src="images/project3-image.jpg" alt="Project 3">
+                    <div class="project-description">
+                        <h3><a href="https://github.com/your-github-username/project3" target="_blank">Remote Data Collection</a></h3>
+                        <p>Designed, coded, and built remote soil data (Air and Soil Temp. & Humidity, Sunlight) collection system data with Arduinos. 
+                            The data was communicated with radio waves and I made a data streaming algorithm to parse data and stored it in MySQL database.
+                            Made a GUI in Java allowing graphing and displaying of data, save and import, communication with database</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project4-image.jpg" alt="Project 4">
+                    <div class="project-description">
+                        <h3><a href="https://github.com/your-github-username/project4" target="_blank">Arithmetic Game</a></h3>
+                        <p>Small Game to test Arithmetic skills.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
